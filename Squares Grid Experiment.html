@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Retro Puzzle Game</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        background-color: lightgrey;
+      }
+      h1 {
+        background-color: grey;
+      }
+      img {
+        z-index: -1;
+        position: relative;
+        bottom: 200px;
+        margin: 8px;
+        float: right;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 220px;
+        text-align: center;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        background-color: black;
+        width: max-content;
+        height: max-content;
+        gap: 5px;
+        padding: 5px;
+      }
+      .item {
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+      }
+      .item:hover {
+        background-color: lightsteelblue;
+      }
+
+      .shrink {
+        height: 20px;
+        width: 20px;
+      }
+
+    </style>
+    <script>
+
+      function myFunction1() {
+        var element = document.getElementById("one");
+        element.classList.toggle("shrink");
+      }
+      function myFunction2() {
+        var element = document.getElementById("two");
+        element.classList.toggle("shrink");
+      }
+      function myFunction3() {
+        var element = document.getElementById("three");
+        element.classList.toggle("shrink");
+      }
+      function myFunction4() {
+        var element = document.getElementById("four");
+        element.classList.toggle("shrink");
+      }
+      function myFunction5() {
+        var element = document.getElementById("five");
+        element.classList.toggle("shrink");
+      }
+      
+      function myFunction6() {
+        var element = document.getElementById("six");
+        element.classList.toggle("shrink");
+      }
+      function myFunction7() {
+        var element = document.getElementById("seven");
+        element.classList.toggle("shrink");
+      }
+      function myFunction8() {
+        var element = document.getElementById("eight");
+        element.classList.toggle("shrink");
+      }
+      function myFunction9() {
+        var element = document.getElementById("nine");
+        element.classList.toggle("shrink");
+      }
+      function myFunction10() {
+        var element = document.getElementById("ten");
+        element.classList.toggle("shrink");
+      }
+      
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Puzzle Game</h1>
+      <h2>Objective: Shrink the grid</h2>
+
+      <div class="grid-container">
+        <div class="item square1" id="one" onclick="myFunction1()"></div>
+        <div class="item square2" id="two" onclick="myFunction2()"></div>
+        <div class="item square3" id="three" onclick="myFunction3()"></div>
+        <div class="item square4" id="four" onclick="myFunction4()"></div>
+        <div class="item square5" id="five" onclick="myFunction5()"></div>
+
+        <div class="item square6" id="six" onclick="myFunction6()"></div>
+        <div class="item square7" id="seven" onclick="myFunction7()"></div>
+        <div class="item square8" id="eight" onclick="myFunction8()"></div>
+        <div class="item square9" id="nine" onclick="myFunction9()"></div>
+        <div class="item square10" id="ten" onclick="myFunction10()"></div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1553531768-c85fc0f7033f?q=80&w=3880&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Yay!" title="Yay!" width="180px">
+    </div>
+  </body>
+</html>
